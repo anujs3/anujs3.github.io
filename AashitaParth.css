@@ -1,0 +1,114 @@
+/* HTML Body */
+body {font-family: 'Dosis', sans-serif;}
+
+/* Headings */
+h1
+{
+	display: inline;
+	font-size: 120px;
+	font-family: 'Tangerine', cursive;
+}
+h2
+{
+	font-size: 40px;
+	font-family: 'Poiret One', cursive;
+}
+
+/* Center the text. */
+.text {text-align:center;}
+
+/* Set the text color. */
+.text, .section, #timeLeft, #blessing {color: #990033;}
+
+/* Set the font size. */
+p, input, label, #timeLeft {font-size: 25px;}
+
+/* Indent the content. */
+p, textarea, audio, #required, #submit, .section {margin-left: 20px;}
+
+/* Shift the content to the right-hand corner. */
+#timeLeft, #blessing {float: right;}
+
+#timeLeft
+{
+	font-family: 'Poiret One';
+	background: #FAF0E6;
+}
+
+#ganesh
+{
+	float: right;
+	display: inline;
+}
+
+#blessing
+{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 22px;
+}
+
+#story {font-style: italic;}
+
+#hastags
+{
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+}
+
+/* RSVP Form */
+#form {color: #222222;}
+#attending, #teams, #first_name_text, #last_name_text {display: inline;}
+#submit:hover {background-color: #CCCCCC;}
+input, textarea {border-radius: 5px;}
+input[type="text"], textarea[type="text"] {font-family: 'Dosis', sans-serif;}
+
+/* Links */
+a:link, a:visited
+{
+	color: #990033;
+	text-decoration: none;
+}
+a:hover {text-shadow: 2px 2px #FFFFFF;}
+
+/* 
+----- Tabs -----
+*/
+
+/* Style the list. */
+ul.tab 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FAF0E6;
+}
+
+/* Float the list items side by side. */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items. */
+ul.tab li a 
+{
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.4s;
+	font-size: 20px;
+}
+
+/* Change background color of links on hover. */
+ul.tab li a:hover {background-color: #D9D9D9;}
+
+/* Create an active/current tablink class. */
+ul.tab li a:focus, .active {background-color: #E6E6E6;}
+
+/* Style the tab content. */
+.tabcontent 
+{
+	display: none;
+	padding: 6px 12px;
+	border-top: none;
+}
