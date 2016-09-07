@@ -1,115 +1,52 @@
 <!DOCTYPE html>
-<html lang = "en">
 
 	<head>
-	
 		<title>Anuj Shah</title>
-		<meta charset = "utf-8">
 		<link rel="icon" href="favicon.png">
-		<meta name = "viewport" content = "width=device-width, initial-scale=1">
-		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href = "https://fonts.googleapis.com/css?family=Dosis|Poiret+One|Tangerine|Architects+Daughter|Raleway" rel = "stylesheet">
 		<link rel = "stylesheet" type = "text/css" href = "AnujShah.css">
-		
 	</head>
 	
-	<body id = "myPage" data-spy = "scroll" data-target = ".navbar" data-offset = "60">
-	
-		<nav class = "navbar navbar-default navbar-fixed-top">
-			<div class = "container">
-				<div class = "navbar-header">
-				  <button type = "button" class="navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
-					<span class = "icon-bar"></span>
-					<span class = "icon-bar"></span>
-					<span class = "icon-bar"></span>
-				  </button>
-				  <a class = "navbar-brand" href = "#myPage">Anuj Shah</a>
-				</div>
-				<div class = "collapse navbar-collapse" id = "myNavbar">
-					<ul class = "nav navbar-nav navbar-right">
-						<li><a href = "#edu">Education</a></li>
-						<li><a href = "#work">Work Experience</a></li>
-						<li><a href = "#hack">HackUCI</a></li>
-						<li><a href = "#vr">Sonder VR</a></li>
-						<li><a href = "#spacegods">Space Gods</a></li>
-						<li><a href = "#band">The Simple Approach</a></li>
-						<li><a href = "#contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	
-		<div class = "jumbotron text-center">
-			<div class = "row">
-				<br>
-				<img class = "main_pics" src = "ProfilePic.png"/>
-				<h1><strong>Anuj Shah</strong></h1>
-				<br><br>
-				<a id = "resume" href = "AnujShah.pdf" download>Download R&eacute;sum&eacute; </a>
-			</div>
-		</div>
+	<body>
 		
-		<div id = "edu" class = "container-fluid school">
-			<!--<h1>About Me</h1>-->
-			
-			<div class = "container-fluid text-center">
-				<h2>Education</h2>
-				<br>
-				<a href = "http://uci.edu/"><img src = "UCI_Words.png"/></a>
-			</div>
-		</div>
-			
-		<br><br>
-			
-		<div id = "work" class = "container-fluid text-center">
-			<h2 class = "section">Places I've Worked</h2>
+		<h1 class = "text">Anuj Shah</h1>
+		
+		<ul class = "tab">
+		  <li><a href = "#Home" class = "tablinks" onclick = "openTab(event, 'Home')">Home</a></li>
+		  <li><a href = "#AboutMe" class = "tablinks" onclick = "openTab(event, 'About Me')">About Me</a></li>
+		  <li><a href = "#Contact" class = "tablinks" onclick = "openTab(event, 'Contact')">Contact</a></li>
+		</ul>
+		
+		<div id = "Home" class = "tabcontent">
 			<br>
-			<div class = "row">
-				<!--
-				<div class = "col-sm-4">
-							<a href = "http://www.greenburghny.com/">
-								<img class = "logo" src = "Greenburgh_Logo.gif"/>
-							</a>
-							<p>Greenburgh Town Hall</p>
-				</div>
-				-->
-				<div class = "col-sm-4">
-					<a href = "http://www.wayup.com/">
-						<img class = "logo" src = "WayUp_Logo.jpg"/>
-					</a>
-					<p class = "company"><strong>WayUp</strong></p>
-				</div>
-				<div class = "col-sm-4"></div>
-				<div class = "col-sm-4">
-					<a href = "http://www.iacapps.com/">
-						<img class = "logo" src = "IAC_Applications_Logo.png"/>
-					</a>
-					<p class = "company"><strong>IAC Applications</strong></p>
-				</div>
-			</div>
+			<center><img class = "main_pics" src = "ProfilePic.png"/></center>
 			<br><br>
-			<div class = "row">
-				<div class = "col-sm-4">
-					<a href = "http://www.joyrun.com/">
-						<img class = "logo" src = "JoyRun_Logo.png"/>
-					</a>
-					<p class = "company"><strong>JoyRun</strong></p>
-				</div>
-				<div class = "col-sm-4"></div>
-				<div class = "col-sm-4">
-					<a href = "http://www.idtech.com/locations/new-york-summer-camps/new-york/id-programming-nyu/">
-						<img class = "logo" src = "iD_Tech_Logo.png"/>
-					</a>
-					<p class = "company"><strong>iD Tech</strong></p>
-				</div>
-			</div>
+			<center><a href = "http://uci.edu/"><img src = "UCI_Words.png"/></a></center>
+			<br><br>
+			<center><a id = "resume" href = "AnujShah.pdf" download>Download R&eacute;sum&eacute; </a></center>
 		</div>
-			
-		<br><br>
+
+		<div id = "About Me" class = "tabcontent">
 		
-		<div id = "hack" class = "container-fluid bg-grey">
+			<br>
+			
+			<h2 class = "section">Places I've Worked</h2>
+			<a href = "http://www.greenburghny.com/">
+				<img class = "logo" src = "Greenburgh_Logo.gif"/>
+			</a>
+			<a href = "http://www.wayup.com/">
+				<img class = "logo" src = "WayUp_Logo.jpg"/>
+			</a>
+			<a href = "http://www.iacapps.com/">
+				<img class = "logo" src = "IAC_Applications_Logo.png"/>
+			</a>
+			<a href = "http://www.joyrun.com/">
+				<img class = "logo" src = "JoyRun_Logo.png"/>
+			</a>
+			<a href = "http://www.idtech.com/locations/new-york-summer-camps/new-york/id-programming-nyu/">
+				<img class = "logo" src = "iD_Tech_Logo.png"/>
+			</a>
+			
 			<h2 class = "section">HackUCI
 				<a href = "http://hackuci.com/"/>
 					<img src = "HackUCI_Logo.png"/>
@@ -118,19 +55,12 @@
 					<img src = "Hack_Logo.png"/>
 				</a>
 			</h2>
-			<br>
 			<img class = "about" src = "HackUCI2015_Group.jpg"/>
-			<br><br>
-		</div>
-		
-		<div id = "vr" class = "container-fluid">
+			
 			<h2 class = "section">Sonder VR</h2>
 			<!--<img src = "Butterworth.jpg"/>-->
 			<img class = "about" src = "Ingenuity.jpg"/>
-			<br><br>
-		</div>
-		
-		<div id = "spacegods" class = "container-fluid bg-grey">
+			
 			<h2 class = "section">Space Gods
 				<a href = "https://dl.dropboxusercontent.com/u/14941389/webpage/games/SpaceGods.zip">
 					<img class = "mini_logo" src = "Windows_Logo.png"/>
@@ -139,12 +69,8 @@
 					<img class = "mini_logo" src = "Apple_Logo.png"/>
 				</a>
 			</h2>
-			<br>
-			<img class = "about" src = "Space_Gods.png"/>
-			<br><br>
-		</div>
-		
-		<div id = "band" class = "container-fluid">
+			<img src = "Space_Gods.png"/>
+			
 			<h2 class = "section">The Simple Approach
 				<a href = "http://www.facebook.com/Simple-Approach-139281669462672/">
 					<img class = "mini_logo" src = "Facebook_Logo.png"/>
@@ -156,110 +82,49 @@
 					<img class = "mini_logo" src = "SoundCloud_Logo.png"/>
 				</a>
 			</h2>
-			<br>
-			<div class = "row">
-				<div class = "col-sm-4">
-					<div class = "thumbnail">
-						<br>
-						<img class = "about" src = "Band_Instruments.jpg"/>
-						<br>
-					</div>
-				</div>
-				<div class = "col-sm-4">
-					<div class = "thumbnail">
-						<br>
-						<img class = "about" src = "Simple_Approach_Black.jpg"/>
-						<br>
-					</div>
-				</div>
-				<div class = "col-sm-4">
-					<div class = "thumbnail">
-						<br>
-						<img class = "about" src = "Simple_Approach_Performing.jpg"/>
-						<br>
-					</div>
-				</div>
-			</div>
+			<img class = "about" src = "Band_Instruments.jpg"/>
+			<br><br>
+			<img class = "about" src = "Simple_Approach_Black.jpg"/>
+			<br><br>
+			<img class = "about" src = "Simple_Approach_Performing.jpg"/>
+			
 		</div>
-			
-		<br><br>
-			
-		<div id = "contact" class = "container-fluid bg-grey">
-			<h2 class = "text-center">Contact Me</h2>
-			<div class = "row">
-				<div class = "col-sm-5">
-					<p>Contact me and I'll get back to you within 48 hours.</p>
-					<p><span class = "glyphicon glyphicon-map-marker"></span> Irvine, CA</p>
-					<p><span class = "glyphicon glyphicon-phone"></span> 914.482.1633</p>
-					<p><span class = "glyphicon glyphicon-envelope"></span> anujs3@uci.edu</p> 
-				</div>
-				<div class = "col-sm-7">
-					<div class = "row">
-						<div class = "col-sm-6 form-group">
-							<input class = "form-control" id = "name" name = "name" placeholder = "Name" type = "text" required>
-						</div>
-						<div class = "col-sm-6 form-group">
-							<input class = "form-control" id = "email" name = "email" placeholder = "Email" type = "email" required>
-						</div>
-						</div>
-						<textarea class = "form-control" id = "comments" name = "comments" placeholder = "Comment" rows = "5"></textarea><br>
-					<div class = "row">
-						<div class = "col-sm-12 form-group">
-							<button class = "btn btn-default pull-right" type = "submit">Send</button>
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-			
-		<div class = "container-fluid">
+		
+		<div id = "Contact" class = "tabcontent">
+			<h2>Contact Me</h2>
+			<form id = "form" name = "contact_form" method = "post" action = "email_handler.php" onsubmit = "return validateForm()">
+				<p id = "first_name_text"><font color="red">*</font>First Name:
+					<input id = "first_name" name = "first_name" type = "text" placeholder = "" spellcheck = "false" size = "40" maxlength = "100" required/>
+				</p>
+				<p id = "last_name_text"><font color="red">*</font>Last Name:
+					<input id = "last_name" name = "last_name" type = "text" placeholder = "" spellcheck = "false" size = "40" maxlength = "100" required/>
+				</p>
+				<p><font color = "red">*</font>Email:
+					<input id = "email" name = "email" type = "text" placeholder = "" spellcheck = "false" size = "80" maxlength = "100" required/>
+				</p>
+				<p>Message:</p>
+				<textarea id = "message" name = "message" rows = "10" cols = "100" placeholder = "Your Text Here"></textarea>
+				<br><br>
+				<font id = "required" color="red">* Required</font>
+				<br><br>
+				<input id = "submit" type="submit" name="btnSubmit" style="width:100px;height:40px;" value="Submit"/>
+				<br><br>
+			</form>
+			<br><br>
+			<img src = "Hack_Corporate_Business_Card.png"/>
+			<br><br>
 			<a href = "http://www.linkedin.com/in/anujshah">
 				<img src = "LinkedIn_Logo.png"/>
 			</a>
 			<!--<a href = "http://www.github.com/anujs3"/>
 				<img src = "GitHub_Logo.png"/>
 			</a>-->
-			<br><br><br><br>
 		</div>
 		
-		<footer class="container-fluid text-center">
-			<a href="#myPage" title="To Top">
-				<span class="glyphicon glyphicon-chevron-up"></span>
-				<p>Back to Top</p>
-			</a>
-		</footer>
+		<br><br>
+		<a id = "up" href = "#top">Back to Top</a>
 		
-		<script>
-			$(document).ready(function()
-			{
-			  // Add smooth scrolling to all links in navbar + footer link.
-			  $(".navbar a, footer a[href = '#myPage']").on('click', function(event) 
-			  {
-
-				  // Make sure this.hash has a value before overriding default behavior.
-				  if (this.hash !== "") 
-				  {
-					// Prevent default anchor click behavior.
-					event.preventDefault();
-
-					// Store hash.
-					var hash = this.hash;
-
-					// Using jQuery's animate() method to add smooth page scroll.
-					// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area.
-					$('html, body').animate(
-					{
-						scrollTop: $(hash).offset().top
-					}, 900, 
-					function()
-					{
-						// Add hash (#) to URL when done scrolling (default click behavior).
-						window.location.hash = hash;
-					});
-				  } // End if.
-			  });
-			});
-		</script>
+		<script src = "AnujShah.js"></script>
 		
 	</body>
 </html>

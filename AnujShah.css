@@ -1,10 +1,11 @@
-/* Links */
-a:link, a:visited
+/* HTML Body */
+body 
 {
-	color: #9933FF;
-	text-decoration: none;
+	font-family: 'Dosis', sans-serif;
+	background-color: #E6E6E6;
 }
 
+/* Headings */
 h1
 {
 	font-size: 120px;
@@ -12,13 +13,44 @@ h1
 }
 h2
 {
-	font-weight: bold;
+	color: #66A3FF;
+	font-size: 40px;
 	font-family: 'Poiret One', cursive;
+}
+
+/* Center the text. */
+.text {text-align: center;}
+
+/* Set the text color. */
+.text {color: #00ACE9;}
+
+/* Set the font size. */
+p, input, label {font-size: 25px;}
+
+/* Indent the content. */
+p, textarea, #required, #submit {margin-left: 20px;}
+
+/* RSVP Form */
+#form 
+{
+	border-style: solid;
+    border-width: 2px;
+	border-color: #222222;
+}
+#submit:hover {background-color: #CCCCCC;}
+input, textarea {border-radius: 5px;}
+input[type="text"], textarea[type="text"] {font-family: 'Dosis', sans-serif;}
+
+/* Links */
+a:link, a:visited
+{
+	color: #9933FF;
+	text-decoration: none;
 }
 
 #resume
 {
-	font-size: 20px;
+	font-size: 40px;
 	color: #FFFFFF;
 	background-color: #9933FF;
 	padding: 8px 8px 8px 8px;
@@ -28,10 +60,16 @@ h2
 {
 	background-color: #6600CC;
 }
+
+#up:hover
+{
+	text-shadow: 1px 1px #FFFFFF;
+}
+
 .about
 {
-	width: 480px;
-	height: 318px;
+	width: 960px;
+	height: 636px;
 }
 .logo
 {
@@ -45,38 +83,49 @@ h2
 }
 .main_pics
 {
-	width: 300px;
-	height: 300px;
-}
-.company
-{
-	margin-top: 10px;
+	width: 400px;
+	height: 400px;
 }
 
-.jumbotron
+/* 
+----- Tabs -----
+*/
+
+/* Style the list. */
+ul.tab 
 {
-	color: #00ACE9;
-	padding: 50px 25px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FAF0E6;
 }
-.bg-grey
+
+/* Float the list items side by side. */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items. */
+ul.tab li a 
 {
-	background-color: #F6F6F6;
+	display: inline-block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
+	transition: 0.4s;
 }
-.school
+
+/* Change background color of links on hover. */
+ul.tab li a:hover {background-color: #E0E0EB;}
+
+/* Create an active/current tablink class. */
+ul.tab li a:focus, .active {background-color: #D9D9D9;}
+
+/* Style the tab content. */
+.tabcontent 
 {
-	background-image: url("Banner.jpg");
-	background-size: cover;
-	color: #FFFFFF;
-}
-.container-fluid
-{
-	padding: 60px 50px;
-}
-@media screen and (max-width: 768px) 
-{
-	.col-sm-4 
-	{
-		text-align: center;
-		margin: 25px 0;
-	}
+	display: none;
+	border-top: none;
+	padding: 6px 12px;
 }
