@@ -7,7 +7,7 @@ https://anujs3.github.io
 - Home	
   - Download my resume and view my projects on GitHub.	
 - Work Experience
-  - Learn more about the various kind of work I've done.
+  - Learn more about where I've worked.
 - Technologies
   - View my favorite programming languages.
 - Contact	
