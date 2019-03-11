@@ -1,175 +1,245 @@
 <!DOCTYPE html>
+<html lang="en">
 
-	<head>
-		<title>Anuj Shah</title>
-		<link rel="icon" href="favicon.png">
-		<link href = "https://fonts.googleapis.com/css?family=Dosis|Poiret+One|Tangerine|Architects+Daughter|Raleway" rel = "stylesheet">
-		<link rel = "stylesheet" type = "text/css" href = "css/AnujShah.css">
-	</head>
+<head>
+	<title>Anuj Shah</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+		integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+		crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Poiret+One|Tangerine|Architects+Daughter|Raleway"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
 
-	<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-		<h1 class = "text">Anuj Shah</h1>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">Anuj Shah</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#work">Work Experience</a></li>
+					<li><a href="#tech">Technologies</a></li>
+					<li><a href="#edu">Education</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-		<ul class = "tab">
-		  <li><a href = "#Home" class = "tablinks" onclick = "openTab(event, 'Home')">Home</a></li>
-		  <li><a href = "#AboutMe" class = "tablinks" onclick = "openTab(event, 'About Me')">About Me</a></li>
-		  <li><a href = "#Expertise" class = "tablinks" onclick = "openTab(event, 'Expertise')">Programming Expertise</a></li>
-		  <li><a href = "#Contact" class = "tablinks" onclick = "openTab(event, 'Contact')">Contact</a></li>
-		</ul>
-
-		<div id = "Home" class = "tabcontent">
+	<div class="jumbotron text-center">
+		<div class="row">
 			<br>
-			<center><img class = "main_pics" src = "Profile-Pictures/ProfilePicture.png"/></center>
+			<img class="main_pics" src="Profile-Pictures/ProfilePicture.png" />
+			<h1><strong>Anuj Shah</strong></h1>
 			<br><br>
-			<center><a href = "http://uci.edu/"><img src = "UCI/UCI_Words.png"/></a></center>
-			<br><br>
-			<center><a id = "resume" href = "Anuj_Shah-Resume.pdf" download>Download R&eacute;sum&eacute; </a></center>
-		</div>
-
-		<div id = "About Me" class = "tabcontent">
-
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+					<a href="http://www.linkedin.com/in/anujshah">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+					<a href="http://www.github.com/anujs3">
+						<i class="fab fa-github-square fa-2x"></i>
+					</a>
+					<a href="http://www.twitter.com/anujs26">
+						<i class="fab fa-twitter-square fa-2x"></i>
+					</a>
+				</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
 			<br>
-
-			<h2 class = "section">Places I've Worked</h2>
-			<a href = "http://www.greenburghny.com/">
-				<img class = "logo" src = "Work/Greenburgh_Logo.gif"/>
-			</a>
-			<a href = "http://www.wayup.com/">
-				<img class = "logo" src = "Work/WayUp_Logo.jpg"/>
-			</a>
-			<a href = "http://www.iacapps.com/">
-				<img class = "logo" src = "Work/IAC_Applications_Logo.png"/>
-			</a>
-			<a href = "http://www.joyrun.com/">
-				<img class = "logo" src = "Work/JoyRun_Logo.png"/>
-			</a>
-			<a href = "http://www.idtech.com/locations/new-york-summer-camps/new-york/id-programming-nyu/">
-				<img class = "logo" src = "Work/iD_Tech_Logo.png"/>
-			</a>
-			<a href = "https://www.symantec.com/">
-				<img class = "logo" src = "Work/Symantec_Logo.png"/>
-			</a>
-
-			<h2 class = "section">HackUCI
-				<a href = "http://hackuci.com/"/>
-					<img src = "Hack/HackUCI_Logo.png"/>
-				</a>
-				<a href = "http://hack.ics.uci.edu/"/>
-					<img src = "Hack/Hack_Logo.png"/>
-				</a>
-			</h2>
-			<img class = "about" src = "Hack/HackUCI2015_Group.jpg"/>
-			<h3 style = "color: #5C5C5C; line-height: 2em;"><i>HackUCI is a 3-day hackathon at UC Irvine where hundreds of college students come together to develop software from scratch to win prizes. As the Director of Corporate Outreach, I am responsible for contacting sponsors to attend our annual event. In November 2015, we hosted our second hackathon at the eSports Arena in Santa Ana, California. Read more about it <a href = "https://hack.ics.uci.edu/2015/11/23/hackuci-2015/">here!</a></i></h3>
-
-			<h2 class = "section">Sonder VR</h2>
-			<!--<img src = "Butterworth.jpg"/>-->
-			<img class = "about" src = "Sonder-VR/Ingenuity.jpg"/>
-			<h3 style = "color: #5C5C5C; line-height: 2em;"><i>Sonder VR is an application that helps people with Autism Spectrum Disorder learn and practice their social skills. I helped develop the application in Unity and create the business case for the product. Our application uses virtual reality to teach kids with autism about body language. We participated in the <a href = "http://tech.uci.edu/competitions/past-2016.php">Butterworth Development Competition at UCI</a> and won first place!</i></h3>
-
-			<h2 class = "section">Space Gods
-				<a href = "https://dl.dropboxusercontent.com/u/14941389/webpage/games/SpaceGods.zip">
-					<img class = "mini_logo" src = "Space-Gods/Windows_Logo.png"/>
-				</a>
-				<a href = "https://dl.dropboxusercontent.com/u/14941389/webpage/games/SpaceGodsApp.zip">
-					<img class = "mini_logo" src = "Space-Gods/Apple_Logo.png"/>
-				</a>
-			</h2>
-			<img src = "Space-Gods/Space_Gods.png"/>
-			<h3 style = "color: #5C5C5C; line-height: 2em;"><i>Space Gods is a 2D arena-based fighting game where you battle gods from different universes. For this game project, I collaborated with 10+ developers. I was in charge of programming the game and creating the sound effects. Our game is available for download on <a href = "https://dl.dropboxusercontent.com/u/14941389/webpage/games/SpaceGods.zip">PC</a> and <a href = "https://dl.dropboxusercontent.com/u/14941389/webpage/games/SpaceGodsApp.zip">Mac</a>. Check it out!</i></h3>
-
-			<h2 class = "section">The Simple Approach
-				<a href = "https://www.facebook.com/simpleapproach">
-					<img class = "mini_logo" src = "Simple-Approach/Facebook_Logo.png"/>
-				</a>
-				<a href = "http://www.youtube.com/user/SimpleApproachBand">
-					<img class = "mini_logo" src = "Simple-Approach/YouTube_Logo.png"/>
-				</a>
-				<a href = "http://soundcloud.com/the-simple-approach">
-					<img class = "mini_logo" src = "Simple-Approach/SoundCloud_Logo.png"/>
-				</a>
-			</h2>
-			<img class = "about" src = "Simple-Approach/Band_Instruments.jpg"/>
-			<br><br>
-			<img class = "about" src = "Simple-Approach/Simple_Approach_Black.jpg"/>
-			<br><br>
-			<img class = "about" src = "Simple-Approach/Simple_Approach_Performing.jpg"/>
-			<h3 style = "color: #5C5C5C; line-height: 2em;"><i>I'm the lead drummer in a rock band called The Simple Approach. We recently created an album of eleven original songs. Here are some pictures from our gig at the <a href = "http://greenburghnaturecenter.org/">Greenburgh Nature Center</a>.</i></h3>
-
+			<a id="resume" href="Anuj_Shah-Resume.pdf" download><span class=" glyphicon glyphicon-download-alt"></span>
+				R&eacute;sum&eacute;</a>
 		</div>
+	</div>
 
-		<div id = "Expertise" class = "tabcontent">
-			<h2>Programming Languages</h2>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/Java.png"/>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/Python.png"/>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/RLang.png"/>
-			<br><br>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/HTML.png"/>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/CSS.png"/>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/JavaScript.png"/>
-			<br><br>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/C.png"/>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/CPlusPlus.png"/>
-			<img style = "margin-right: 50px;" class = "logo" src = "Programming-Languages/CSharp.png"/>
-			<br><br>
-			<h2>Programs</h2>
-			<a href = "https://developer.android.com/studio/index.html">
-				<img style = "margin-right: 50px;" class = "logo" src = "Programs/AndroidStudio.png"/>
-			</a>
-			<a href = "https://unity3d.com">
-				<img style = "margin-right: 50px;" class = "logo" src = "Programs/Unity.png"/>
-			</a>
-			<a href = "http://www.photoshop.com">
-				<img style = "margin-right: 50px;" class = "logo" src = "Programs/Photoshop.jpg"/>
-			</a>
-			<br><br>
-			<a href = "https://eclipse.org">
-				<img style = "margin-right: 50px;" class = "logo" src = "Programs/Eclipse.png"/>
-			</a>
-			<a href = "https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx">
-				<img style = "margin-right: 50px;" class = "logo" src = "Programs/VisualStudio.png"/>
-			</a>
-			<a href = "https://www.rstudio.com">
-				<img style = "margin-right: 50px;" class = "logo" src = "Programs/R.png"/>
-			</a>
-
-		</div>
-
-		<div id = "Contact" class = "tabcontent">
-			<h2>Contact Me</h2>
-			<!--<form id = "form" name = "contact_form" method = "post" action = "email_handler.php" onsubmit = "return validateForm()">
-				<p id = "first_name_text"><font color="red">*</font>First Name:
-					<input id = "first_name" name = "first_name" type = "text" placeholder = "" spellcheck = "false" size = "40" maxlength = "100" required/>
-				</p>
-				<p id = "last_name_text"><font color="red">*</font>Last Name:
-					<input id = "last_name" name = "last_name" type = "text" placeholder = "" spellcheck = "false" size = "40" maxlength = "100" required/>
-				</p>
-				<p><font color = "red">*</font>Email:
-					<input id = "email" name = "email" type = "text" placeholder = "" spellcheck = "false" size = "80" maxlength = "100" required/>
-				</p>
-				<p>Message:</p>
-				<textarea id = "message" name = "message" rows = "10" cols = "100" placeholder = "Your Text Here"></textarea>
-				<br><br>
-				<font id = "required" color="red">* Required</font>
-				<br><br>
-				<input id = "submit" type="submit" name="btnSubmit" style="width:100px;height:40px;" value="Submit"/>
-				<br><br>
-			</form>-->
-			<br><br>
-			<img src = "Hack/Hack_Corporate_Business_Card.png"/>
-			<br><br>
-			<a href = "http://www.linkedin.com/in/anujshah">
-				<img src = "Contact/LinkedIn_Logo.png"/>
-			</a>
-			<!--<a href = "http://www.github.com/anujs3"/>
-				<img src = "GitHub_Logo.png"/>
-			</a>-->
+	<!-- Work Experience -->
+	<div id="work" class="container-fluid text-center">
+		<h2 class="section">Current Work Experience</h2>
+		<br>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<a href="https://www.sendgrid.com/">
+					<img class="logo" src="Work/SendGrid_Logo.png" />
+				</a>
+				<p class="company"><strong>Software Engineer at Twilio SendGrid</strong></p>
+			</div>
+			<div class="col-sm-4"></div>
 		</div>
 
 		<br><br>
-		<a id = "up" href = "#top">Back to Top</a>
 
-		<script src = "js/AnujShah.js"></script>
+		<h2 class="section">Past Work Experiences</h2>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://www.symantec.com/">
+					<img class="logo" src="Work/Symantec_Logo.png" />
+				</a>
+				<p class="company"><strong>Software Engineering Intern at Symantec</strong></p>
+			</div>
+			<div class="col-sm-4">
+				<a href="http://www.idtech.com/locations/new-york-summer-camps/new-york/id-programming-nyu/">
+					<img class="logo" src="Work/iD_Tech_Logo.png" />
+				</a>
+				<p class="company"><strong>Instructor at iD Tech Programming Academy</strong></p>
+			</div>
+			<div class="col-sm-4">
+				<a href="http://www.joyrun.com/">
+					<img class="logo" src="Work/JoyRun_Logo.png" />
+				</a>
+				<p class="company"><strong>Brand Ambassador at JoyRun</strong></p>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="http://www.iacapps.com/">
+					<img class="logo" src="Work/IAC_Applications_Logo.png" />
+				</a>
+				<p class="company"><strong>JavaScript Engineer Intern at IAC Applications</strong></p>
+			</div>
+			<div class="col-sm-4">
+				<a href="http://www.wayup.com/">
+					<img class="logo" src="Work/WayUp_Logo.jpg" />
+				</a>
+				<p class="company"><strong>Campus Rep at WayUp</strong></p>
+			</div>
+			<div class="col-sm-4">
+				<a href="http://www.greenburghny.com/">
+					<img class="logo" src="Work/Greenburgh_Logo.gif" />
+				</a>
+				<p class="company"><strong>Intern at Greenburgh Town Hall</strong></p>
+			</div>
+		</div>
+	</div>
 
-	</body>
+	<br><br>
+
+	<!-- Technologies -->
+	<div id="tech" class="container-fluid text-center">
+		<h2>Programming Languages</h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<img class="logo" src="Programming-Languages/Java.png" />
+			</div>
+			<div class="col-sm-4">
+				<img class="logo" src="Programming-Languages/Python.jpg" />
+			</div>
+			<div class="col-sm-4">
+				<img class="logo" src="Programming-Languages/CPlusPlus.png" />
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-sm-4">
+				<img class="logo" src="Programming-Languages/HTML.png" />
+			</div>
+			<div class="col-sm-4">
+				<img class="logo" src="Programming-Languages/CSS.png" />
+			</div>
+			<div class="col-sm-4">
+				<img class="logo" src="Programming-Languages/JavaScript.png" />
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<!-- Education -->
+	<div id="edu" class="container-fluid school">
+
+		<div class="container-fluid text-center">
+			<h2>Education</h2>
+			<br>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>B.S. in Computer Science</h3>
+					<h3>B.A. in Business Administration</h3>
+				</div>
+				<div class="col-sm-4">
+					<a href="http://uci.edu/"><img src="UCI/UCI_Words.png" /></a>
+				</div>
+				<div class="col-sm-4">
+					<h3>Emphasis in Information</h3>
+					<h3>Class of 2018</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div id="contact" class="container-fluid bg-grey">
+		<h2 class="text-center">Contact Me</h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Contact me and I'll get back to you within 48 hours.</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> Irvine, CA</p>
+				<p><span class="glyphicon glyphicon-phone"></span> 914.482.1633</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> anujshah26@gmail.com</p>
+			</div>
+			<div class="col-sm-7">
+				<div class="row">
+					<iframe
+						src="https://docs.google.com/forms/d/e/1FAIpQLScLdtGWFBBFoGZ7dE11UHoV7a36HsorAiKIZC9oR7SEanPymg/viewform?embedded=true"
+						width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center">
+		<a href="#home" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+			<p>Back to Top</p>
+		</a>
+	</footer>
+
+	<script>
+		$(document).ready(function () {
+			// Add smooth scrolling to all links in navbar + footer link.
+			$(".navbar a, footer a[href = '#home']").on('click', function (event) {
+
+				// Make sure this.hash has a value before overriding default behavior.
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior.
+					event.preventDefault();
+
+					// Store hash.
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll.
+					// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area.
+					$('html, body').animate(
+						{
+							scrollTop: $(hash).offset().top
+						}, 900,
+						function () {
+							// Add hash (#) to URL when done scrolling (default click behavior).
+							window.location.hash = hash;
+						});
+				} // End if.
+			});
+		});
+	</script>
+</body>
+
 </html>
